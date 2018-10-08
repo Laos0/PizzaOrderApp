@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Pizza Order</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="pizzaSizes">
+        <item>10 Inch Pizza -- $11.79</item>
+        <item>12 Inch Pizza -- $12.79</item>
+        <item>14 Inch Pizza -- $13.79</item>
+        <item>16 Inch Pizza -- $14.79</item>
+    </string-array>
+    <string name="title_activity_receipt">ReceiptActivity</string>
+</resources>

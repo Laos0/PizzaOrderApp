@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".OrderActivity"
+    tools:showIn="@layout/activity_order">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="5"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25dp"
+            android:text="Sony's Pizza!"
+           />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Place your order, and pick up your pizza in 30 minutes."
+            />
+
+        <ImageView
+            android:id="@+id/pizzaImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/pizzaman"
+            />
+
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Name (Bob)"
+            android:inputType="textPersonName"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="16dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Select Your Pizza Size"
+            />
+
+        <Spinner
+            android:id="@+id/pizzaSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="16dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Select Your Crust"
+            />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/handTossed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hand-Tossed"
+                />
+            <RadioButton
+                android:id="@+id/deepDish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deep-Dish"
+                 />
+            <RadioButton
+                android:id="@+id/thinCrust"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thin Crust"
+                />
+        </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="16dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Select Your Toppings"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+                <CheckBox
+                    android:id="@+id/sausage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sausage"
+                    />
+                <CheckBox
+                    android:id="@+id/pepperoni"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/cat"
+                    android:text="Pepperoni"
+                    />
+                <CheckBox
+                    android:id="@+id/tomatoes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tomatoes"
+                    />
+                <CheckBox
+                    android:id="@+id/onions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Onions"
+                    />
+        </LinearLayout>
+                <CheckBox
+                    android:id="@+id/bellPepper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bell Pepper"
+                    />
+        <Button
+            android:id="@+id/clearBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Clear"
+            />
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Order"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
